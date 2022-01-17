@@ -80,6 +80,13 @@ app.post('/register', (req, res) => {
                 username: req.body.username,
                 password: hashedPassword //STEP-5
             })
+            
+            //-------If opted Approach 5
+            //const { username, password } = req.body;
+            //const user = new User({ username });
+            //const newUser = await User.register(user, password);
+            //---------
+            
             await newUser.save()
             res.send('user created')
         }
