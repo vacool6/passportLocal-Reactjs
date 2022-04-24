@@ -9,6 +9,7 @@ function App() {
   const [loginpassword, setloginpassword] = useState('')
   const [data, setData] = useState(null)
 
+  //Register
   const register = () => {
     axios({
       method: 'POST',
@@ -21,6 +22,7 @@ function App() {
     }).then((res) => console.log(res))
   };
 
+  //Login
   const login = () => {
     axios({
       method: 'POST',
@@ -33,6 +35,7 @@ function App() {
     }).then((res) => console.log(res))
   };
 
+  //Getuser
   const getUser = () => {
     axios({
       method: 'GET',
@@ -45,6 +48,7 @@ function App() {
     )
   };
 
+  //Logout
   const logout = () => {
     axios({
       method: 'GET',
