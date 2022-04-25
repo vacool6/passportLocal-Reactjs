@@ -78,7 +78,6 @@ function App() {
         <button onClick={getUser}>Submit</button>
         {data ? <h1>Welcome back {data.username}!, id:{data._id}</h1> : null}
       </div>
-
       <div>
         <h1>Logout!</h1>
         <button onClick={logout}>Submit</button>
