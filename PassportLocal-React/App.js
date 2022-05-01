@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import './App.css';
 
-function App() {
-  
+function App() { 
   const [registerusername, setRegisterusername] = useState('')
   const [registerpassword, setRegisterpassword] = useState('')
   const [loginusername, setloginusername] = useState('')
