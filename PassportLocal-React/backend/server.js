@@ -13,7 +13,17 @@ dotenv.config()
 
 const app = express()
 
-
+//STEPS:-
+//(1)Set up backend require essentials and create basic routes
+//(2)Go to front end useState, axios and make sure we are able to communicate to backend and viceversa
+//(3)Now after step2 is done connect Mongodb(setup n connect) now make sure we are able to post data in DB with same register route
+//axios
+//(4)Now we can see we can store data in DB(username and password ) but password is not hashed.Not idle to store password like that
+//-------------------AUTH STARTS----------------
+//(5)we bcrypt(hash) the password(AT this point we can create as many user as we want without trouble)
+//(6)WE create passportConfig folder with all the login inside it(Local strategy inside it)
+//(7)we bring passportConfig in server.js and use it
+//(8)Finally go to /login and do  the needful :)
 
 //MongoDB
 mongoose.connect(process.env.MONGO_URI, {
