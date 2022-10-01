@@ -97,10 +97,14 @@ app.get('/user', (req, res) => {
     res.send(req.user)
 })
 
-app.get('/logout', (req, res) => {
-    req.logOut()
-    res.send("Successful")
-})
+app.post("/logout", function (req, res) {
+  req.logout(function (err) {
+    if (err) {
+      console.log(err);
+    }
+    res.send("Successful");
+  });
+});
 
 
 //Start Port
