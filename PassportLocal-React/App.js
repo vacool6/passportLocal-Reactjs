@@ -51,7 +51,7 @@ function App() {
   //Logout
   const logout = () => {
     axios({
-      method: 'GET',
+      method: 'POST',
       withCredentials: true,
       url: 'http://localhost:4000/logout'
     }).then((res) => console.log(res))
