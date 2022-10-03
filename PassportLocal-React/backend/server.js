@@ -26,13 +26,10 @@ const app = express()
 //(8)Finally go to /login and do  the needful :)
 
 //MongoDB
-mongoose.connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
-const db = mongoose.connection
-db.on('error', console.error.bind('Connection error'))
-db.once('open', () => console.log('Connection Successful to MongoDB'))
+mongoose
+  .connect(process.env.MONGO_URI)
+  .then((res) => console.log("Connection Successful to MongoDB"))
+  .catch((err) => console.log("Connection error"));
 
 //MiddleWare
 app.use(express.json())
