@@ -6,13 +6,13 @@ I have implemented session based auth using passport-local strategy.
 ### Frontend setup
  1 . Create a react app.
 
- 2 . Replace the App.js file with App.js from PassportLocal-React forder.
+ 2 . Replace the App.js file with App.js from PassportLocal-React folder.
 
  3 . Run the app, frontend is now live at port.3000
  
   
   ### Backend setup
- 1 . Logic is available in backend folder in PassportLocal-React forder.
+ 1 . Logic is available in backend folder in PassportLocal-React folder.
 
  2 . `$ npm i` to install all the depencencies.
 
