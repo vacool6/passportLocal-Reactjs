@@ -1,5 +1,15 @@
 # Passport local
-I have implemented session based auth using passport-local strategy.
+
+Session-Based Authentication:
+
+How it works: When a user logs in, the server creates a session for that user and stores the session information (usually in memory or a database). 
+A session ID is then sent to the client, typically stored in a cookie.
+
+Usage: The client sends this session ID with each subsequent request, allowing the server to identify and authenticate the user.
+
+Pros: Simple to implement, good for web applications with server-side rendering, session management handled by the server.
+
+Cons: Requires server-side storage, scalability challenges with distributed systems, can be susceptible to session hijacking and CSRF attacks.
 
 ## Running the application
 
